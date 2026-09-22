@@ -1,0 +1,75 @@
+{
+    "data_shape": {
+        "rows": 12,
+        "cols": 24
+    },
+    "initial_results": {
+        "Linear Regression": {
+            "MAE": 4.7646107888251885,
+            "RMSE": 6.708677721863061,
+            "R2": -0.6143767282895336
+        },
+        "Decision Tree": {
+            "MAE": 3.2916666666666665,
+            "RMSE": 5.140221298738022,
+            "R2": 0.05224810063519725
+        },
+        "Random Forest": {
+            "MAE": 3.3145833333333337,
+            "RMSE": 3.603919524281862,
+            "R2": 0.5341123489849295
+        }
+    },
+    "best_rf_params": {
+        "max_depth": null,
+        "min_samples_split": 2,
+        "n_estimators": 10
+    },
+    "best_rf_results": {
+        "MAE": 2.691666666666667,
+        "RMSE": 2.8042007179705712,
+        "R2": 0.717934985676921
+    },
+    "top_features": [
+        {
+            "Feature": "Transportation_Cost",
+            "Importance": 0.2782065305854199
+        },
+        {
+            "Feature": "Distance_km",
+            "Importance": 0.1775588444751671
+        },
+        {
+            "Feature": "Vehicle_Type_Van",
+            "Importance": 0.1734714097565818
+        },
+        {
+            "Feature": "Expected_Delivery_Hours",
+            "Importance": 0.09143395399780938
+        },
+        {
+            "Feature": "Origin_Hyderabad",
+            "Importance": 0.09045936395759717
+        },
+        {
+            "Feature": "Shipment_Weight_kg",
+            "Importance": 0.0860364744587211
+        },
+        {
+            "Feature": "Origin_Chennai",
+            "Importance": 0.038970881638453095
+        },
+        {
+            "Feature": "Origin_Kolkata",
+            "Importance": 0.029151795580110502
+        },
+        {
+            "Feature": "Origin_Mumbai",
+            "Importance": 0.010549683991346063
+        },
+        {
+            "Feature": "Destination_Pune",
+            "Importance": 0.009225050783122609
+        }
+    ]
+}

@@ -1,0 +1,208 @@
+{
+    "rows": 12,
+    "cols": 13,
+    "describe": {
+        "Distance_km": {
+            "count": 12.0,
+            "mean": 0.20800000000000005,
+            "std": 0.2782804340948174,
+            "min": 0.0,
+            "25%": 0.06,
+            "50%": 0.104,
+            "75%": 0.29400000000000004,
+            "max": 1.0
+        },
+        "Shipment_Weight_kg": {
+            "count": 12.0,
+            "mean": 0.3522177419354839,
+            "std": 0.34337953889744455,
+            "min": 0.0,
+            "25%": 0.09274193548387094,
+            "50%": 0.23387096774193544,
+            "75%": 0.6171370967741936,
+            "max": 1.0
+        },
+        "Delivery_Time_Hours": {
+            "count": 12.0,
+            "mean": 7.604166666666667,
+            "std": 4.270948815881406,
+            "min": 3.5,
+            "25%": 4.75,
+            "50%": 6.0,
+            "75%": 9.0,
+            "max": 15.375
+        },
+        "Expected_Delivery_Hours": {
+            "count": 12.0,
+            "mean": 7.791666666666667,
+            "std": 4.868536896763905,
+            "min": 4.0,
+            "25%": 5.0,
+            "50%": 6.0,
+            "75%": 8.625,
+            "max": 22.0
+        },
+        "Transportation_Cost": {
+            "count": 12.0,
+            "mean": 5458.333333333333,
+            "std": 3602.1353094905794,
+            "min": 2000.0,
+            "25%": 3375.0,
+            "50%": 4500.0,
+            "75%": 6375.0,
+            "max": 15000.0
+        },
+        "Delivery_Delay": {
+            "count": 12.0,
+            "mean": -0.1875,
+            "std": 3.11133375375782,
+            "min": -6.625,
+            "25%": -1.0,
+            "50%": 0.0,
+            "75%": 0.5,
+            "max": 6.875
+        },
+        "Cost_Per_Km": {
+            "count": 12.0,
+            "mean": 14.829837081651965,
+            "std": 5.13099853594618,
+            "min": 10.526315789473683,
+            "25%": 12.259615384615385,
+            "50%": 13.80952380952381,
+            "75%": 15.25,
+            "max": 30.0
+        }
+    },
+    "missing": {
+        "Shipment_ID": 0,
+        "Order_Date": 1,
+        "Origin": 0,
+        "Destination": 0,
+        "Distance_km": 0,
+        "Vehicle_Type": 0,
+        "Shipment_Weight_kg": 0,
+        "Delivery_Time_Hours": 0,
+        "Expected_Delivery_Hours": 0,
+        "Transportation_Cost": 0,
+        "Delivery_Status": 0,
+        "Delivery_Delay": 0,
+        "Cost_Per_Km": 0
+    },
+    "duplicates": 0,
+    "numerical": [
+        "Distance_km",
+        "Shipment_Weight_kg",
+        "Delivery_Time_Hours",
+        "Expected_Delivery_Hours",
+        "Transportation_Cost",
+        "Delivery_Delay",
+        "Cost_Per_Km"
+    ],
+    "categorical": [
+        "Shipment_ID",
+        "Order_Date",
+        "Origin",
+        "Destination",
+        "Vehicle_Type",
+        "Delivery_Status"
+    ],
+    "delivery_time": {
+        "mean": 7.604166666666667,
+        "median": 6.0,
+        "std": 4.270948815881406,
+        "min": 3.5,
+        "max": 15.375,
+        "range": 11.875,
+        "q1": 4.75,
+        "q3": 9.0
+    },
+    "kpis": {
+        "On_Time_Delivery_Rate": 58.333333333333336,
+        "Average_Delivery_Time": 7.604166666666667,
+        "Average_Transportation_Cost": 5458.333333333333,
+        "Average_Cost_per_Kilometer": 14.829837081651965,
+        "Shipment_Volume": 12
+    },
+    "correlations": {
+        "Distance_km": {
+            "Distance_km": 1.0,
+            "Shipment_Weight_kg": 0.5833381626906796,
+            "Delivery_Time_Hours": 0.7884509591090995,
+            "Expected_Delivery_Hours": 0.9906727415613541,
+            "Transportation_Cost": 0.964227665687827,
+            "Delivery_Delay": -0.46786787272949254,
+            "Cost_Per_Km": -0.3801145126344781,
+            "Cost_Per_Km_Raw": -0.7516032821025646
+        },
+        "Shipment_Weight_kg": {
+            "Distance_km": 0.5833381626906796,
+            "Shipment_Weight_kg": 1.0,
+            "Delivery_Time_Hours": 0.842185605968585,
+            "Expected_Delivery_Hours": 0.5466829365657743,
+            "Transportation_Cost": 0.6963226320739981,
+            "Delivery_Delay": 0.300638132419074,
+            "Cost_Per_Km": -0.1900637842571994,
+            "Cost_Per_Km_Raw": -0.28528400399906256
+        },
+        "Delivery_Time_Hours": {
+            "Distance_km": 0.7884509591090995,
+            "Shipment_Weight_kg": 0.842185605968585,
+            "Delivery_Time_Hours": 1.0,
+            "Expected_Delivery_Hours": 0.7758100249866943,
+            "Transportation_Cost": 0.8530678745997989,
+            "Delivery_Delay": 0.15873870289802472,
+            "Cost_Per_Km": -0.290252727191864,
+            "Cost_Per_Km_Raw": -0.6142207521675203
+        },
+        "Expected_Delivery_Hours": {
+            "Distance_km": 0.9906727415613541,
+            "Shipment_Weight_kg": 0.5466829365657743,
+            "Delivery_Time_Hours": 0.7758100249866943,
+            "Expected_Delivery_Hours": 1.0,
+            "Transportation_Cost": 0.9506886108188091,
+            "Delivery_Delay": -0.4998152278969889,
+            "Cost_Per_Km": -0.3833796736081997,
+            "Cost_Per_Km_Raw": -0.7309620243936266
+        },
+        "Transportation_Cost": {
+            "Distance_km": 0.964227665687827,
+            "Shipment_Weight_kg": 0.6963226320739981,
+            "Delivery_Time_Hours": 0.8530678745997989,
+            "Expected_Delivery_Hours": 0.9506886108188091,
+            "Transportation_Cost": 1.0,
+            "Delivery_Delay": -0.3166016339540502,
+            "Cost_Per_Km": -0.17689640418401756,
+            "Cost_Per_Km_Raw": -0.7089860096291851
+        },
+        "Delivery_Delay": {
+            "Distance_km": -0.46786787272949254,
+            "Shipment_Weight_kg": 0.300638132419074,
+            "Delivery_Time_Hours": 0.15873870289802472,
+            "Expected_Delivery_Hours": -0.4998152278969889,
+            "Transportation_Cost": -0.3166016339540502,
+            "Delivery_Delay": 1.0,
+            "Cost_Per_Km": 0.2014710071419666,
+            "Cost_Per_Km_Raw": 0.3427166425495861
+        },
+        "Cost_Per_Km": {
+            "Distance_km": -0.3801145126344781,
+            "Shipment_Weight_kg": -0.1900637842571994,
+            "Delivery_Time_Hours": -0.290252727191864,
+            "Expected_Delivery_Hours": -0.3833796736081997,
+            "Transportation_Cost": -0.17689640418401756,
+            "Delivery_Delay": 0.2014710071419666,
+            "Cost_Per_Km": 1.0,
+            "Cost_Per_Km_Raw": 0.7113342207614365
+        },
+        "Cost_Per_Km_Raw": {
+            "Distance_km": -0.7516032821025646,
+            "Shipment_Weight_kg": -0.28528400399906256,
+            "Delivery_Time_Hours": -0.6142207521675203,
+            "Expected_Delivery_Hours": -0.7309620243936266,
+            "Transportation_Cost": -0.7089860096291851,
+            "Delivery_Delay": 0.3427166425495861,
+            "Cost_Per_Km": 0.7113342207614365,
+            "Cost_Per_Km_Raw": 1.0
+        }
+    }
+}
